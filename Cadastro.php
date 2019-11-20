@@ -36,36 +36,49 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cidade"]) &
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Css/bootstrap.css"
+    <link rel="stylesheet" type="text/css" href="Css/boot.css" media="screen" />
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Cadastro.php">Cadastrar <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                <li>
+                    <a class="nav-link" href="Listar.php">Listar <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 </head>
 <body>
+
+
+<form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
+
+
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" name="nome"  placeholder="Nome">
+    </div>
+        <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" class="form-control" name="email"  placeholder="E-mail">
+        </div>
+    <div class="form-group">
+        <label >Cidade</label>
+        <input type="text" class="form-control" name="cidade" placeholder="Cidade">
+    </div>
+    <div class="form-group">
+        <label>UF</label>
+        <input type="text" class="form-control" name="uf" placeholder="UF">
+    </div>
+        <fieldset class="form-group">
+            <input type="hidden" value="-1" name="id">
+            <button type="submit">Cadastrar</button>
+    </fieldset>
+</form>
 
 <?php
 if (isset($erro))
@@ -75,18 +88,5 @@ else
         echo '<div style="color:#00f">' . $sucesso . '</div><br/><br/>'
 
 ?>
-<form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
-    Nome:<br/>
-    <input type="text" name="nome" placeholder="Qual seu nome?"><br/><br/>
-    E-mail:<br/>
-    <input type="email" name="email" placeholder="Qual seu e-mail?"><br/><br/>
-    Cidade:<br/>
-    <input type="text" name="cidade" placeholder="Qual sua cidade?"><br/><br/>
-    UF:<br/>
-    <input type="text" name="uf" size="2" placeholder="UF">
-    <br/><br/>
-    <input type="hidden" value="-1" name="id">
-    <button type="submit">Cadastrar</button>
-</form">
 </body>
 </html>

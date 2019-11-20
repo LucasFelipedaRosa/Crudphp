@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c772a85-e41b-4362-9454-028abf3d8c79" name="Default Changelist" comment="" />
+    <list default="true" id="3c772a85-e41b-4362-9454-028abf3d8c79" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Cadastro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Listar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Listar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListarPessoas.php" beforeDir="false" afterPath="$PROJECT_DIR$/ListarPessoas.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +27,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Qscl2kD0U9RyaqVDmLLXQJc4uv" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JQuery-CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Crudphp\Css" />
       <recent name="C:\wamp64\www\crud_php" />
     </key>
   </component>
@@ -62,10 +74,22 @@
       <workItem from="1570573900432" duration="1797000" />
       <workItem from="1570575723275" duration="1161000" />
       <workItem from="1570752609012" duration="46000" />
+      <workItem from="1574172412115" duration="13150000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

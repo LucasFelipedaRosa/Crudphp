@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO("mysql:host=localhost:3306;dbname=crud2", "root", "root") or die(mysql_error());
+$pdo = new PDO("mysql:host=localhost:3306;dbname=crud", "root", "") or die(mysql_error());
 
 if (!$pdo) {
     echo "Ocorreu um erro na conexão com o banco de dados.";
@@ -36,7 +36,34 @@ if (isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["cidade"]) &
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <link rel="stylesheet" href="Css/bootstrap.css"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 </head>
 <body>
 
@@ -45,7 +72,7 @@ if (isset($erro))
     echo '<div style="color:#F00">' . $erro . '</div><br/><br/>';
 else
     if (isset($sucesso))
-        echo '<div style="color:#00f">' . $sucesso . '</div><br/><br/>';
+        echo '<div style="color:#00f">' . $sucesso . '</div><br/><br/>'
 
 ?>
 <form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">

@@ -2,7 +2,8 @@
 $pdo = new PDO("mysql:host=localhost:3306;dbname=crud", "root", "") or die(mysql_error());
 $requestData = $_REQUEST;
 
-
+print_r($requestData);die;
+/////
 $columns = array(
     array('0' => 'Nome'),
     array('1' => 'Email'),
@@ -10,7 +11,6 @@ $columns = array(
     array('3' => 'UF'),
 
 );
-
 
     $query = "SELECT p.Nome,p.Cidade,p.Email, p.UF  FROM  pessoa p";
     $query_resultado = $pdo->prepare($query);

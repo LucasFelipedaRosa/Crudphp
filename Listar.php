@@ -1,5 +1,4 @@
 <html>
-<title></title>
 <head>
         <link rel="stylesheet" type="text/css" href="Css/boot.css" media="screen" />
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -24,12 +23,13 @@
             $('#teste').DataTable( {
                 "processing": true,
                 "serverSide": true,
+                "type": "POST",
                 "ajax": {
                     "url": 'ListarPessoas.php',
                     "dataSrc": ""
                     }
                 } );
-            } );          
+            });          
     </script>
 </head>
 <body>
